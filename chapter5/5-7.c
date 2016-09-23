@@ -85,7 +85,7 @@ int get_line(char *line, int maxline) {
         *line++ = c;
         ++i;
     }
-    line = '\0';
+    *line = '\0';
     return i;
 }
 
