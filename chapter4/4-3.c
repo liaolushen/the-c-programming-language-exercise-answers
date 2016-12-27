@@ -90,7 +90,7 @@ int getop(char s[]) {
     int i, c, c2;
 
     while ((s[0] = c = getch()) == ' ' || c == '\t');
-    s[1] = '\0';    
+    s[1] = '\0';
     if (!isdigit(c) && c != '.' && c != '-')
         return c; /* not a number */
     i = 0;
@@ -126,4 +126,3 @@ void ungetch(int c) {/* push character back on input */
     else
         buf[bufp++] = c;
 }
-
